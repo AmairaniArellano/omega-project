@@ -1,0 +1,48 @@
+:root {
+    --color-primario: #000000;
+    --color-secundario: #fff;
+    --color-terciario: #FFC65B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    height: 94px;
+    display: flex;
+    /* Usamos flexbox para los elementos dentro del nav */
+    justify-content: space-between;
+    /* Esto alinea el logo a la izquierda y los otros elementos a la derecha */
+    align-items: center;
+    /* Centra el contenido verticalmente */
+    padding: 0 20px;
+    /* Espaciado interno para que no toque los bordes */
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    flex-grow: 1;
+    padding-left: 600px;
+    /* Esto asegura que la lista ocupe el espacio restante */
+}
+
+.logo1 {
+    width: 45px;
+    height: auto;
+    margin-right: 200px;
+}  
+
+.main{
+    background-image: url('/media/Imagenes/principal.jpg');
+    width: 100%;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
