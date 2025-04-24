@@ -26,3 +26,5 @@ setInterval(() => {
   index = (index + 1) % totalImages;
   updateSlider();
 }, 5000); // Pausa de 5 segundos
+
+//Carrusel
