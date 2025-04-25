@@ -36,7 +36,7 @@ ul {
 }
 
 .main {
-  background-image: url('media/Imagenes/principal.jpg');
+  background-image: url('../media/Imagenes/principal.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
   background-color: var(--color-primario);
