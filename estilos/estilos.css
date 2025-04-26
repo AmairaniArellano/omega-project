@@ -307,10 +307,11 @@ ul {
   flex-direction: row;
   padding: 1%;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .Colaboradores img {
-  inline-size: 154px;
+  inline-size: 150px;
 }
 
 .Contacto {
