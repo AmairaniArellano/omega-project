@@ -70,6 +70,68 @@ ul {
   font-family: "Inter", sans-serif;
 }
 
+.Proyectos h2{
+  color: var(--color-primario);
+  margin: 100px 0 0 50px;
+  font-size: 32px;
+}
+
+.photo-frame {
+  position: relative;
+  display: inline-block;
+  padding: 90px 70px;
+  background-color: var(--color-secundario);
+  margin: 40px auto 40px 40px;
+
+}
+
+/* Esquinas superiores */
+.photo-frame::before,
+.photo-frame::after {
+  content: '';
+  position: absolute;
+  width: 50px; /* Más grandes */
+  height: 80px;
+  border: 3px solid black;
+}
+
+.photo-frame::before {
+  top: 10px;  /* Separación desde el borde */
+  left: 10px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.photo-frame::after {
+  top: 10px;
+  right: 10px;
+  border-left: none;
+  border-bottom: none;
+}
+
+.corner {
+  position: absolute;
+  width: 50px; /* Igual que arriba */
+  height: 80px; /* Igual que arriba */
+  border: 3px solid black;
+  z-index: 100;
+}
+
+.corner.bottom-left {
+  bottom: 65px;
+  left: 10px; /* Igual que arriba */
+  border-right: none;
+  border-top: none;
+}
+
+.corner.bottom-right {
+  bottom: 65px;
+  right: 10px; /* Igual que arriba */
+  border-left: none;
+  border-top: none;
+}
+
+
 .slider {
   width: 500px;
   height: auto;
@@ -107,6 +169,8 @@ ul {
   user-select: none;
 }
 
+
+
 .popup {
   color: var(--color-secundario);
   background-color: var(--color-primario);
@@ -120,9 +184,9 @@ ul {
 }
 
 .Proyectos {
-  background-color: var(--color-primario);
   color: var(--color-secundario);
   font-family: "Inter", sans-serif;
+  height: 700px;
 }
 
 .colaboradores {
@@ -136,6 +200,7 @@ ul {
   flex-direction: row;
   padding: 1%;
   gap: 10%;
+  background-color: var(--color-primario);
 }
 
 .Contacto {
