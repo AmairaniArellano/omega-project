@@ -1,5 +1,6 @@
 :root {
-  --color-primario: #101010; /* Elegí el valor del segundo archivo como base */
+  --color-primario: #101010;
+  /* Elegí el valor del segundo archivo como base */
   --color-secundario: #fff;
   --color-terciario: #FFC65B;
 }
@@ -70,19 +71,23 @@ ul {
   font-family: "Inter", sans-serif;
 }
 
-.Proyectos{
- display: flex;
+.Proyectos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 900px;
+  background-color: var(--color-secundario);
+  font-family: "Inter", sans-serif;
 }
 
-.Proyectos .wrapper1 h2{
+.Proyectos .wrapper1 h2 {
   color: var(--color-primario);
   margin-left: 50px;
   font-size: 32px;
 }
-.wrapper1{
-  width: 50%;
+
+.wrapper1 {
   margin-top: 70px;
-  height: 800px;
+  height: 700px;
 }
 
 .wrapper1 .photo-frame {
@@ -99,13 +104,15 @@ ul {
 .wrapper1 .photo-frame::after {
   content: '';
   position: absolute;
-  width: 50px; /* Más grandes */
+  width: 50px;
+  /* Más grandes */
   height: 80px;
   border: 3px solid black;
 }
 
 .wrapper1 .photo-frame::before {
-  top: 10px;  /* Separación desde el borde */
+  top: 10px;
+  /* Separación desde el borde */
   left: 10px;
   border-right: none;
   border-bottom: none;
@@ -120,21 +127,25 @@ ul {
 
 .wrapper1 .photo-frame .corner {
   position: absolute;
-  width: 50px; /* Igual que arriba */
-  height: 80px; /* Igual que arriba */
+  width: 50px;
+  /* Igual que arriba */
+  height: 80px;
+  /* Igual que arriba */
   border: 3px solid black;
 }
 
 .wrapper1 .photo-frame .corner.bottom-left {
-  bottom: 65px;
-  left: 10px; /* Igual que arriba */
+  bottom: 25px;
+  left: 10px;
+  /* Igual que arriba */
   border-right: none;
   border-top: none;
 }
 
 .wrapper1 .photo-frame .corner.bottom-right {
-  bottom: 65px;
-  right: 10px; /* Igual que arriba */
+  bottom:25px;
+  right: 10px;
+  /* Igual que arriba */
   border-left: none;
   border-top: none;
 }
@@ -147,13 +158,14 @@ ul {
   position: relative;
 }
 
-.wrapper1 .photo-frame .slider-container{
+.wrapper1 .photo-frame .slider-container {
   background-color: var(--color-primario);
   height: 370px;
 }
 
 .wrapper1 .photo-frame .slider-container .slider h3 {
   margin: 9px;
+  color: var(--color-secundario);
 }
 
 .wrapper1 .photo-frame .slider-container .slider button {
@@ -188,9 +200,8 @@ ul {
 
 
 /* segundo frame */
-.wrapper2{
-  width: 50%;
-  margin: 50px 25px 0 0;
+.wrapper2 {
+  margin-top: 50px;
   padding-right: 80px;
   background-color: var(--color-primario);
   padding-top: 70px;
@@ -209,13 +220,15 @@ ul {
 .wrapper2 .photo-frame-2::after {
   content: '';
   position: absolute;
-  width: 50px; /* Más grandes */
+  width: 50px;
+  /* Más grandes */
   height: 80px;
   border: 3px solid var(--color-secundario);
 }
 
 .wrapper2 .photo-frame-2::before {
-  top: 10px;  /* Separación desde el borde */
+  top: 10px;
+  /* Separación desde el borde */
   left: 10px;
   border-right: none;
   border-bottom: none;
@@ -230,26 +243,30 @@ ul {
 
 .wrapper2 .photo-frame-2 .corner {
   position: absolute;
-  width: 50px; /* Igual que arriba */
-  height: 80px; /* Igual que arriba */
+  width: 50px;
+  /* Igual que arriba */
+  height: 80px;
+  /* Igual que arriba */
   border: 3px solid var(--color-secundario);
 }
 
 .wrapper2 .photo-frame-2 .corner.bottom-left {
-  bottom: 65px;
-  left: 10px; /* Igual que arriba */
+  bottom: 25px;
+  left: 10px;
+  /* Igual que arriba */
   border-right: none;
   border-top: none;
 }
 
 .wrapper2 .photo-frame-2 .corner.bottom-right {
-  bottom: 65px;
-  right: 10px; /* Igual que arriba */
+  bottom: 25px;
+  right: 10px;
+  /* Igual que arriba */
   border-left: none;
   border-top: none;
 }
 
-.wrapper2 .photo-frame-2 .slider-container{
+.wrapper2 .photo-frame-2 .slider-container {
   background-color: var(--color-secundario);
 }
 
@@ -272,24 +289,29 @@ ul {
   align-self: flex-start;
 }
 
-.Proyectos {
+
+.Colaboradores {
+  background-color: var(--color-primario) !important;
   color: var(--color-secundario);
   font-family: "Inter", sans-serif;
-  height: 700px;
+  height: 380px;
 }
 
-.colaboradores {
-  background-color: var(--color-primario);
-  color: var(--color-secundario);
-  font-family: "Inter", sans-serif;
+.Colaboradores h2{
+  padding: 40px 0 40px 80px;
+  font-size: 33px;
 }
 
-.colaboradoresimg {
+.Colaboradores-container{
   display: flex;
   flex-direction: row;
   padding: 1%;
-  gap: 10%;
-  background-color: var(--color-primario);
+  justify-content: center;
+  gap: 4%;
+}
+
+.Colaboradores img {
+  inline-size: 200px;
 }
 
 .Contacto {
