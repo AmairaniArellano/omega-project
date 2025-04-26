@@ -59,24 +59,24 @@ ul {
   height: auto;
 }
 
-.boton {
+.main button {
   background-color: var(--color-primario);
   padding: 10px 25px;
   border-radius: 25px;
   border: 2px solid var(--color-secundario);
   font-family: "Inter", sans-serif;
+  color: var(--color-secundario);
+  font-size: 26px;
 }
 
-.popup {
+.popUp {
   color: var(--color-secundario);
   background-color: var(--color-primario);
-  display: flex;
   width: 40%;
   height: 7%;
   text-align: justify;
   padding: 2.5%;
   opacity: 0.7;
-  align-self: flex-start;
 }
 
 
