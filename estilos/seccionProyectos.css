@@ -1,0 +1,212 @@
+.Proyectos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 900px;
+    background-color: var(--color-secundario);
+    font-family: "Inter", sans-serif;
+  }
+  
+  .Proyectos .wrapper1 h2 {
+    color: var(--color-primario);
+    margin-left: 50px;
+    font-size: 32px;
+  }
+  
+  .wrapper1 {
+    margin-top: 70px;
+    height: 700px;
+  }
+
+  .wrapper1 .photo-frame-center{
+    display: grid;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .wrapper1 .photo-frame {
+    position: relative;
+    display: inline-block;
+    padding: 90px 70px;
+    background-color: var(--color-secundario); 
+  }
+  
+  /* Esquinas superiores */
+  .wrapper1 .photo-frame::before,
+  .wrapper1 .photo-frame::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    /* Más grandes */
+    height: 80px;
+    border: 3px solid black;
+  }
+  
+  .wrapper1 .photo-frame::before {
+    top: 10px;
+    /* Separación desde el borde */
+    left: 10px;
+    border-right: none;
+    border-bottom: none;
+  }
+  
+  .wrapper1 .photo-frame::after {
+    top: 10px;
+    right: 10px;
+    border-left: none;
+    border-bottom: none;
+  }
+  
+  .wrapper1 .photo-frame .corner {
+    position: absolute;
+    width: 50px;
+    /* Igual que arriba */
+    height: 80px;
+    /* Igual que arriba */
+    border: 3px solid black;
+  }
+  
+  .wrapper1 .photo-frame .corner.bottom-left {
+    bottom: 25px;
+    left: 10px;
+    /* Igual que arriba */
+    border-right: none;
+    border-top: none;
+  }
+  
+  .wrapper1 .photo-frame .corner.bottom-right {
+    bottom:25px;
+    right: 10px;
+    /* Igual que arriba */
+    border-left: none;
+    border-top: none;
+  }
+  
+  
+  .wrapper1 .photo-frame .slider-container .slider {
+    width: 500px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .wrapper1 .photo-frame .slider-container {
+    background-color: var(--color-primario);
+    height: 370px;
+  }
+  
+  .wrapper1 .photo-frame .slider-container .slider h3 {
+    margin: 9px;
+    color: var(--color-secundario);
+  }
+  
+  .wrapper1 .photo-frame .slider-container .slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .wrapper1 .photo-frame .slider-container #prev-btn {
+    left: 10px;
+  }
+  
+  .wrapper1 .photo-frame .slider-container #next-btn {
+    right: 10px;
+  }
+  
+  .wrapper1 .photo-frame .slider-container .slider .slider-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .wrapper1 .photo-frame .slider-container .slider .slider-inner img {
+    width: 100%;
+    height: auto;
+    user-select: none;
+  }
+  
+  
+  /* segundo frame */
+  .wrapper2 {
+    margin-top: 50px;
+    padding-right: 80px;
+    background-color: var(--color-primario);
+    padding-top: 70px;
+    height: 800px;
+  }
+
+  .wrapper2 .photo-frame-center{
+    display: grid;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .wrapper2 .photo-frame-2 {
+    position: relative;
+    padding: 90px 70px;
+    float: right;
+  }
+  
+  /* Esquinas superiores */
+  .wrapper2 .photo-frame-2::before,
+  .wrapper2 .photo-frame-2::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    /* Más grandes */
+    height: 80px;
+    border: 3px solid var(--color-secundario);
+  }
+  
+  .wrapper2 .photo-frame-2::before {
+    top: 10px;
+    /* Separación desde el borde */
+    left: 10px;
+    border-right: none;
+    border-bottom: none;
+  }
+  
+  .wrapper2 .photo-frame-2::after {
+    top: 10px;
+    right: 10px;
+    border-left: none;
+    border-bottom: none;
+  }
+  
+  .wrapper2 .photo-frame-2 .corner {
+    position: absolute;
+    width: 50px;
+    /* Igual que arriba */
+    height: 80px;
+    /* Igual que arriba */
+    border: 3px solid var(--color-secundario);
+  }
+  
+  .wrapper2 .photo-frame-2 .corner.bottom-left {
+    bottom: 25px;
+    left: 10px;
+    /* Igual que arriba */
+    border-right: none;
+    border-top: none;
+  }
+  
+  .wrapper2 .photo-frame-2 .corner.bottom-right {
+    bottom: 25px;
+    right: 10px;
+    /* Igual que arriba */
+    border-left: none;
+    border-top: none;
+  }
+  
+  .wrapper2 .photo-frame-2 .slider-container {
+    background-color: var(--color-secundario);
+  }
+  
+  .wrapper2 .photo-frame-2 .slider-container .slider h3 {
+    color: var(--color-primario);
+    margin: 9px;
+  }
