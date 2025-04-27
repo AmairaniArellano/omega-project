@@ -33,6 +33,7 @@ nav ul {
   margin-right: 200px;
 }
 
+/* ------------------------------------sección de header----------------------------------------------------- */
 .main {
   background-image: url('../media/Imagenes/principal.jpg');
   background-repeat: no-repeat;
@@ -68,7 +69,20 @@ nav ul {
   font-family: "Inter", sans-serif;
   color: var(--color-secundario);
   font-size: 26px;
+  cursor: pointer;
+  transition: background-color 0.4s, transform 0.2s, color 0.4s;
 }
+/* Animación al pasar el mouse */
+.main button:hover {
+  background-color: var(--color-terciario); /* Cambia a amarillo al pasar el mouse */
+  color: var(--color-primario); /* Opcional: el texto puede cambiar para seguir viéndose bien */
+}
+
+/* Animación al dar clic */
+.main button:active {
+  transform: scale(0.95); /* Se encoge un poquito al hacer clic */ }
+
+/* -------------------------------Sección de pop up--------------------------------------------------------- */
 
 .popUpContainer {
   width: 100%;
@@ -78,14 +92,15 @@ nav ul {
   /* Permite que los elementos dentro de él se posicionen */
   overflow: hidden;
   /* Evita que el pop-up se salga del contenedor */
+  font-family: "Inter", sans-serif;
 }
 
 .popUpContainer .popUp {
   color: var(--color-secundario);
-  background-color: var(--color-primario);
-  width: 40%;
+  background-color: rgba(16, 16, 16, 0.6);
+  width: 30%;
   /* Ancho del pop-up */
-  height: 150px;
+  height: auto;
   /* Alto del pop-up */
   text-align: justify;
   padding: 2.5%;
@@ -111,28 +126,58 @@ nav ul {
 /* -------------------------------Sección de colaboradores--------------------------------------------------------- */
 
 .Colaboradores {
-  background-color: var(--color-primario) !important;
-  color: var(--color-secundario);
+  text-align: left;
+  padding: 40px;
+  background-color: var(--color-primario); 
   font-family: "Inter", sans-serif;
-  height: 380px;
+  color: var(--color-secundario);
 }
-
-.Colaboradores h2 {
-  padding: 40px 0 80px 80px;
-  font-size: 33px;
+.barrasushi{
+  overflow: hidden;
+  width: 100%;
 }
 
 .Colaboradores-container {
   display: flex;
-  flex-direction: row;
-  padding: 1%;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  align-items: center;
+  gap: 60px;
+  animation: moverlogos 25s linear infinite;
 }
 
-.Colaboradores img {
-  inline-size: 150px;
+.Colaboradores-container img {
+  width: 200px; /* Ajusta el tamaño de los logos */
+  height: auto;
 }
+
+/* Keyframes para moverlos */
+@keyframes moverlogos {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.Colaboradores-container:hover {
+  animation-play-state: paused;
+}
+/* --------Parte responsive------------ */
+@media (max-width: 768px) {
+  .Colaboradores-container img {
+    width: 80px; /* Reducimos tamaño de logos en tabletas/móviles */
+  }
+}
+
+@media (max-width: 480px) {
+  .Colaboradores-container img {
+    width: 60px; /* Aún más pequeños en pantallas muy chiquitas */
+  }
+
+  .Colaboradores-container {
+    animation: moverlogos 40s linear infinite; /* Un poco más lenta en celular */
+  }
+}
+
 
 /* ------------------------------------sección de contacto----------------------------------------------------- */
 
