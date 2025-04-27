@@ -1,0 +1,25 @@
+nav {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    height: 94px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    flex-grow: 1;
+    padding-left: 600px;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .logo1 {
+    width: 45px;
+    height: auto;
+    margin-right: 200px;
+  }
+  

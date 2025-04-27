@@ -27,12 +27,13 @@
 
     <div class="popUpContainer">
         <div class="popUp">
-          <p>En Omega brindamos soluciones integrales de mantenimiento para entornos corporativos y residenciales. Nuestro
-            compromiso es ofrecer resultados óptimos, cumpliendo con altos estándares de calidad, eficiencia y
-            puntualidad en cada proyecto.
-          </p>
+            <p>En Omega brindamos soluciones integrales de mantenimiento para entornos corporativos y residenciales.
+                Nuestro
+                compromiso es ofrecer resultados óptimos, cumpliendo con altos estándares de calidad, eficiencia y
+                puntualidad en cada proyecto.
+            </p>
         </div>
-      </div>
+    </div>
 
     <section class="main">
         <!-- <img src="/Imagenes/principal.jpg" alt="fondo"> -->
@@ -62,7 +63,7 @@
                             <button id="prev-btn">←</button>
                             <button id="next-btn">→</button>
                             <h3>Mitsubishi 2025</h3>
-    
+
                         </div>
                     </div>
                 </div>
@@ -101,37 +102,42 @@
         </div>
     </section>
 
-    <section class="Contacto">
-
+    <section class="contacto">
         <h2>Estamos aquí para ti </h2>
 
-        <div class="formulario">
-            <form action=""></form>
+        <div class="contacto-formulario">
+            <!-- hice un class para poder dividir la zonas de contacto y los demas contenidos -->
+            <form class="formulario" action="https://formsubmit.co/lyliarellano@gmail.com" method="post">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo" required>
+                <input type="tel" placeholder="Teléfono">
+                <textarea placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
 
+            <!-- separe en cada div bajo el mismo nombre para separ cada objeto idividualmente  -->
+            <div class="contacto-datos">
 
-
-        </div>
-
-        <!-- separe en cada div bajo el mismo nombre para separ cada objeto idividualmente  -->
-        <div class="iconos">
-            <img src="media/iconos/ubicacion.png" alt="ubicacion">
-            <p>Calle 3 #77 Entre 4C Y 6 Col. Residencial Montecristo, Mérida Yucatán CP. 97133</p>
-        </div>
-        <div class="iconos">
-            <img src="media/iconos/llamada-telefonica.png" alt="llamada">
-            <p>+52 999 406 1085</p>
-        </div>
-        <div class="iconos">
-            <img src="media/iconos/sobre.png" alt="Correo">
-            <p>daniel.marrufo@omegads.com.mx</p>
-        </div>
-        <div class="iconos">
-            <img src="media/iconos/web.png" alt="paginaweb">
-            <p>www.odscorp.mx</p>
+                <div class="iconos">
+                    <img src="/media/iconos/ubicacion.png" alt="ubicacion">
+                    <p>Calle 3 #77 Entre 4C Y 6 Col. Residencial Montecristo, Mérida Yucatán CP. 97133</p>
+                </div>
+                <div class="iconos">
+                    <img src="media/iconos/llamada-telefonica.png" alt="llamada">
+                    <p>+52 999 406 1085</p>
+                </div>
+                <div class="iconos">
+                    <img src="media/iconos/sobre.png" alt="Correo">
+                    <p>daniel.marrufo@omegads.com.mx</p>
+                </div>
+                <div class="iconos">
+                    <img src="media/iconos/web.png" alt="paginaweb">
+                    <p>www.odscorp.mx</p>
+                </div>
+            </div>
         </div>
     </section>
-
-    <script src="javascript/main.js"></script>
+        <script src="javascript/main.js"></script>
 </body>
 
 </html>
