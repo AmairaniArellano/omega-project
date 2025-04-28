@@ -342,3 +342,20 @@ nav ul {
     width: 60%; /* Ajusta el tamaño de la imagen en pantallas grandes */
   }
 }
+
+@media (max-width: 1023px) {
+  .contacto-datos {
+    max-width: 100%; /* para aprovechar más el ancho en pantallas pequeñas */
+    margin-top: 20px;
+  }
+
+  .iconos {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .iconos p {
+    margin-left: 10px;
+  }
+}
+
