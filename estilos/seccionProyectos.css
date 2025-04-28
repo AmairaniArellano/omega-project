@@ -243,3 +243,33 @@
 .wrapper2 .slider:hover .texto-hover {
   opacity: 1;
 }
+
+
+
+
+
+@media (max-width: 1023px) {
+  .Proyectos {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .wrapper1,
+  .wrapper2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .photo-frame,
+  .photo-frame-2 {
+    width: 100%;
+  }
+
+  .slider-container,
+  .slider,
+  .slider-inner img {
+    width: 100%;
+    height: auto;
+  }
+}
