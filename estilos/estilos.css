@@ -75,7 +75,8 @@ nav ul {
 /* Animación al pasar el mouse */
 .main button:hover {
   background-color: var(--color-terciario); /* Cambia a amarillo al pasar el mouse */
-  color: var(--color-primario); /* Opcional: el texto puede cambiar para seguir viéndose bien */
+  color: var(--color-primario); /* el texto puede cambiar para seguir viéndose bien */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra flotante */
 }
 
 /* Animación al dar clic */
