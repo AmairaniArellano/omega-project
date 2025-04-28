@@ -45,6 +45,12 @@ nav {
   padding: 10px 0;
 }
 
+a {
+  text-decoration: none; /* Quita el subrayado */
+  color: inherit;        /* Hereda el color del texto */
+}
+
+
 /* Menú visible cuando se abre */
 .nav-open .nav-links {
   display: flex;
