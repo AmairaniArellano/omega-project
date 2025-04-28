@@ -132,10 +132,10 @@
   
   /* segundo frame */
   .wrapper2 {
-    margin-top: 39px;
+    
     background-color: var(--color-primario);
-    padding-top: 70px;
-    height: 800px;
+    padding-top: 110px;
+   
   }
 
   .wrapper2 .photo-frame-center{
@@ -209,3 +209,37 @@
     color: var(--color-primario);
     margin: 9px;
   }
+  .wrapper2 .slider-inner img { width: 500px;
+    transition: 0.5s ease;
+
+  }
+  /*prueba*/ 
+ /* El texto extra (párrafo) escondido */
+.wrapper2 .texto-hover {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  z-index: 2;
+  color: var(--color-secundario);
+}
+
+/* Estilo del p */
+.wrapper2 .texto-hover p {
+  font-size: 25px;
+  margin: 0;
+}
+
+/* Efectos al hacer hover */
+.wrapper2 .slider:hover img {
+  filter: blur(5px) brightness(70%);
+  transform: scale(1.05);
+}
+
+.wrapper2 .slider:hover .texto-hover {
+  opacity: 1;
+}
