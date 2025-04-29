@@ -18,8 +18,7 @@
   }
   
   .Nosotros p {
-    display: flex;
-    align-items: flex-start;
+    
     font-size: 20px;
     color: var(--color-secundario);
     text-align: justify;
@@ -34,6 +33,7 @@
     padding: 5px 0;
     justify-items: center;
     align-items: center;
+    
   }
   
   .N-imagenes img {
@@ -42,7 +42,13 @@
     border: 3px solid var(--color-terciario);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     object-fit: cover;
+    transition: transform 0.4s ease, filter 0.4s ease; /* transición suave */
   }
+  .N-imagenes img:hover {
+    transform: scale(1.05); /* zoom suave */
+    filter: brightness(1.05); /* leve aumento de brillo */
+  }
+
   /* Misión y Visión */
   .mision-y-vision {
     background-color: var(--color-secundario);
