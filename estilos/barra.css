@@ -1,25 +1,77 @@
+/* Base - mobile first */
 nav {
-    background-color: var(--color-primario);
-    color: var(--color-secundario);
-    height: 94px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+  background-color: var(--color-primario);
+  color: var(--color-secundario);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.logo1 {
+  width: 40px;
+  height: auto;
+}
+
+/* Botón hamburguesa */
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: var(--color-secundario);
+  cursor: pointer;
+  justify-self: end;
+}
+
+/* Menú oculto inicialmente */
+.nav-links {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  background-color: var(--color-primario);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  gap: 10px;
+  padding: 10px 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.nav-links li {
+  padding: 10px 0;
+}
+
+a {
+  text-decoration: none; /* Quita el subrayado */
+  color: inherit;        /* Hereda el color del texto */
+}
+
+
+/* Menú visible cuando se abre */
+.nav-open .nav-links {
+  display: flex;
+}
+
+/* A partir de pantallas medianas */
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
   }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-    flex-grow: 1;
-    padding-left: 600px;
-    font-family: "Inter", sans-serif;
+
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    background: none;
+    justify-content: flex-end;
+    gap: 30px;
   }
-  
-  .logo1 {
-    width: 45px;
-    height: auto;
-    margin-right: 200px;
+
+  nav {
+    grid-template-columns: auto 1fr;
   }
-  
+}
