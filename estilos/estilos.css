@@ -10,11 +10,11 @@
 .Nosotros {
     background-color: var(--color-primario);
     display: flex;
-    flex-wrap: wrap;
     padding: 5% 10%;
     font-family: "Inter", sans-serif;
     align-items: center;
     gap: 80px;
+    flex-direction: row
   }
   
   .Nosotros p {
@@ -143,19 +143,23 @@
     }
   }
   
-/* Pagina 2 ------------------------------------------------------------------------------------------------------------*/
+/* servicios pagina ------------------------------------------------------------------------------------------------------------*/
 .servicios {
-    padding: 40px;
+    padding: 150px;
     background-color: var(--color-primario);
     text-align: center;
     font-family: "Inter", sans-serif;
     padding-block-end: 20%;
     
   }
+  .inicial{
+    font-family: "Inter", sans-serif;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: var(--color-primario);
+    text-align: justify;
+  }
   
-.servicios img{
-    width: 20%;
-}
   .servicios h2 {
     color: var(--color-secundario);
     font-size: 32px;
@@ -166,8 +170,10 @@
   .servicios-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-    gap: 70px; /* Espacio entre columnas */
+    gap: 50px; /* Espacio entre columnas */
     text-align: left;
+    padding: 100px;
+   
   }
   
   .servicio {
@@ -177,6 +183,9 @@
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.692);
     transition: transform 0.3s;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
   
   .servicio:hover {
@@ -190,34 +199,36 @@
   
   .servicio p {
     font-size: 16px;
-    line-height: 1.6;
-  
-   
-   
+    line-height: 1.6;}
+
+  .servicios-grid img{
+    width: 200px;
+    
   }
+
   @media (max-width: 768px) {
     .servicios-grid {
       grid-template-columns: 1fr; /* Una sola columna en móvil */
     }
   }
-/* pagina 3 ---------------------------------------------------------------------------------------------------------------------*/
+/* pagina 3 proyectos ---------------------------------------------------------------------------------------------------------------------*/
 /* Estilos generales para la sección de Proyectos */
 
 
 body {
-  background-color: var(--color-secundario);  /* Fondo principal */
-  color: var(--color-primario);           /* Color del texto general */
+  background-color: var(--color-primario);  /* Fondo principal */
+  color: var(--color-secundario);           /* Color del texto general */
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
 }
-.proyecto img {width: 250px;}
+.proyecto img {width: 300px;}
 
 h2 {
   text-align: center;
   margin-top: 60px;
   font-size: 36px;
-  color: var(--color-primario);           /* Color de títulos */
+  color: var(--color-secundario);           /* Color de títulos */
 }
 
 /* Contenedor de todos los proyectos */
@@ -236,7 +247,7 @@ section {
   color: var(--color-secundario);           /* Letras en color secundario */
   padding: 30px 20px;
   border-radius: 15px;
-  border: 2px solid var(--color-terciario); /* Borde en color terciario */
+  border: 3px solid var(--color-terciario); /* Borde en color terciario */
   box-shadow: 0 8px 16px rgba(0,0,0,0.15);
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: left;
@@ -274,43 +285,37 @@ section {
 }
 
 /*pagina 4 ------------------------------------------------------------------------------------------------------*/
-/* Última sección: Clientes */
-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
-  padding: 60px 10%;
-  background-color: var(--color-secundario);
-  font-family: "Inter", sans-serif;
-}
-
-/* Cada tarjeta de cliente */
-.card {
+.entrada {
+  padding-left: 20%;
+  padding-right: 20%;
   background-color: var(--color-primario);
-  color: var(--color-secundario);
-  padding: 30px 20px;
-  border-radius: 15px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-  transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
-}
-
-.card h3 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.card ul {
-  list-style: none;
-  padding: 0;
-}
-
-.card ul li {
+  font-family: "Inter", sans-serif;
+  padding-top: 3%;
+  text-align: justify;
   font-size: 18px;
-  margin-bottom: 10px;
+}
+
+.card h3{
+  padding-block-end: 3%;
+  font-size: 27px;
+  display: flex;
+  justify-content: center
+}
+
+
+.card ul { 
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 3px solid var(--color-terciario);
+  border-radius: 15px;
+  padding: 5%;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  color: var(--color-terciario);
+  gap: 10px;
 }
