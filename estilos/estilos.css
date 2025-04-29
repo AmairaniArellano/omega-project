@@ -166,7 +166,7 @@
   .servicios-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-    gap: 40px; /* Espacio entre columnas */
+    gap: 70px; /* Espacio entre columnas */
     text-align: left;
   }
   
@@ -205,54 +205,62 @@
 
 
 body {
+  background-color: var(--color-secundario);  /* Fondo principal */
+  color: var(--color-primario);           /* Color del texto general */
   font-family: "Inter", sans-serif;
-  background-color: var(--color-primario);
-  color: var(--color- --color-secundario);
   margin: 0;
   padding: 0;
 }
+.proyecto img {width: 250px;}
 
 h2 {
   text-align: center;
   margin-top: 60px;
   font-size: 36px;
-  color: var(--color-secundario);
+  color: var(--color-primario);           /* Color de títulos */
 }
 
 /* Contenedor de todos los proyectos */
 section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
+  gap:110px;
   padding: 60px 10%;
+  background-color: var(--color-primario);  /* Fondo del contenedor */
 }
+
 
 /* Cada tarjeta de proyecto */
 .proyecto {
-  background-color: rgba(238, 238, 238, 0.322);
-  color: var(--color-secundario);
+  background-color: var(--color-primario);               
+  color: var(--color-secundario);           /* Letras en color secundario */
   padding: 30px 20px;
   border-radius: 15px;
+  border: 2px solid var(--color-terciario); /* Borde en color terciario */
   box-shadow: 0 8px 16px rgba(0,0,0,0.15);
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: left;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
+/* Efecto al pasar el mouse */
 .proyecto:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 24px rgba(0,0,0,0.2);
 }
 
+/* Título de cada proyecto */
 .proyecto h3 {
   font-size: 24px;
   margin-bottom: 15px;
 }
 
+/* Texto de cada proyecto */
 .proyecto p, .proyecto ul li {
   font-size: 16px;
   margin-bottom: 10px;
   line-height: 1.6;
+  font-family: "Inter", sans-serif;
 }
 
 /* Estilos especiales para la lista */
