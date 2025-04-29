@@ -124,19 +124,15 @@
     .Nosotros p {
       font-size: 18px;
     }
-  
     .mision h2, .vision h2 {
       font-size: 24px;
     }
-  
     .mision p, .vision p {
       font-size: 16px;
     }
-  
     .Oficinas iframe {
       height: 300px;
-    }
-    
+    }  
   }
   @media (max-width: 600px) {
     .Nosotros img {
@@ -204,5 +200,109 @@
       grid-template-columns: 1fr; /* Una sola columna en móvil */
     }
   }
+/* pagina 3 ---------------------------------------------------------------------------------------------------------------------*/
+/* Estilos generales para la sección de Proyectos */
 
-  
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-primario);
+  color: var(--color- --color-secundario);
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 36px;
+  color: var(--color-secundario);
+}
+
+/* Contenedor de todos los proyectos */
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  padding: 60px 10%;
+}
+
+/* Cada tarjeta de proyecto */
+.proyecto {
+  background-color: rgba(238, 238, 238, 0.322);
+  color: var(--color-secundario);
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.proyecto:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.proyecto h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.proyecto p, .proyecto ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Estilos especiales para la lista */
+.proyecto ul {
+  list-style: none;
+  padding: 0;
+}
+
+.proyecto ul li {
+  margin-bottom: 10px;
+}
+
+/*pagina 4 ------------------------------------------------------------------------------------------------------*/
+/* Última sección: Clientes */
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  padding: 60px 10%;
+  background-color: var(--color-secundario);
+  font-family: "Inter", sans-serif;
+}
+
+/* Cada tarjeta de cliente */
+.card {
+  background-color: var(--color-primario);
+  color: var(--color-secundario);
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
