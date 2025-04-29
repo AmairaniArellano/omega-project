@@ -237,7 +237,15 @@ body {
   margin: 0;
   padding: 0;
 }
-.proyecto img {width: 300px;}
+  .proyecto img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    
+
+
+}
 
 h2 {
   text-align: center;
