@@ -80,7 +80,7 @@
 
 
 .wrapper1 .photo-frame .slider-container .slider {
-  width: 500px;
+  max-width: 500px;
   height: auto;
   overflow: hidden;
   position: relative;
@@ -118,10 +118,55 @@
 .wrapper1 .photo-frame .slider-container .slider .slider-inner {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  width: fit-content;
 }
 
 .wrapper1 .photo-frame .slider-container .slider .slider-inner img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;       /* Muy importante */
   user-select: none;
+}
+
+
+
+
+
+
+@media (max-width: 765px) {
+  .Proyectos {
+    height: 570px; /* Aumenta la altura */
+    padding: 30px; /* Ajuste para mejor distribución */
+  }
+
+  .wrapper1 .photo-frame {
+    width: 85%;
+    max-width: 450px; /* Un poco más grande */
+    padding: 35px 25px;
+  }
+
+  .wrapper1 .photo-frame .slider-container {
+    width: 100%;
+    height: 270px; /* Más alto para mejor visualización */
+  }
+
+  .wrapper1 .photo-frame .slider-container .slider .slider-inner img {
+    height: 100%;
+    width: auto;
+  }
+
+  /* Ajuste de esquinas inferiores */
+  .wrapper1 .photo-frame .corner.bottom-left,
+  .wrapper1 .photo-frame .corner.bottom-right {
+    bottom: -40px; /* Ajustamos la posición */
+    width: 48px; /* Tamaño más equilibrado */
+    height: 75px;
+    border-width: 3px;
+  }
+
+  .wrapper1 .photo-frame .slider-container .slider h3{
+    color: black;
+    margin-top: 30px;
+  }
 }
