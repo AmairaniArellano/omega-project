@@ -257,7 +257,7 @@ nav ul {
 
 
 
-/* --------------- Mobile First - Ajustes para pantallas pequeñas (hasta 767px) --------------- */
+/* ---------------  - Ajustes para pantallas pequeñas (hasta 767px) --------------- */
 
 @media (max-width: 767px) {
   /* 1. Main Section */
@@ -333,3 +333,13 @@ nav ul {
   }
 }
 
+
+
+
+
+
+@media (max-width: 765px) {
+  .popUpContainer {
+    display: none; /* Lo ocultamos completamente */
+  }
+}
