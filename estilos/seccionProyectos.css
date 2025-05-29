@@ -1,11 +1,15 @@
 .Proyectos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 900px;
+    height: 800px;
     background-color: var(--color-secundario);
     font-family: "Inter", sans-serif;
   }
 
+  .wrapper1 {
+    margin-top: 70px;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+  }
   
   .Proyectos .wrapper1 h2 {
     color: var(--color-primario);
@@ -13,15 +17,13 @@
     font-size: 32px;
   }
   
-  .wrapper1 {
-    margin-top: 70px;
-    height: 700px;
-  }
 
   .wrapper1 .photo-frame-center{
     display: grid;
     justify-content: center;
     margin-top: 50px;
+    grid-column: 3;          /* colocar el contenido en la columna 2 (central) */
+    justify-self: center;
   }
   
   .wrapper1 .photo-frame {
@@ -67,7 +69,7 @@
   }
   
   .wrapper1 .photo-frame .corner.bottom-left {
-    bottom: 25px;
+    bottom: 120px;
     left: 10px;
     /* Igual que arriba */
     border-right: none;
@@ -75,7 +77,7 @@
   }
   
   .wrapper1 .photo-frame .corner.bottom-right {
-    bottom:25px;
+    bottom:120px;
     right: 10px;
     /* Igual que arriba */
     border-left: none;
@@ -131,146 +133,3 @@
   }
   
   
-  /* segundo frame */
-  .wrapper2 {
-    
-    background-color: var(--color-primario);
-    padding-top: 110px;
-   
-  }
-
-  .wrapper2 .photo-frame-center{
-    display: grid;
-    justify-content: center;
-    margin-top: 50px;
-  }
-  
-  .wrapper2 .photo-frame-2 {
-    position: relative;
-    padding: 90px 70px;
-    float: right;
-  }
-  
-  /* Esquinas superiores */
-  .wrapper2 .photo-frame-2::before,
-  .wrapper2 .photo-frame-2::after {
-    content: '';
-    position: absolute;
-    width: 50px;
-    /* Más grandes */
-    height: 80px;
-    border: 3px solid var(--color-secundario);
-  }
-  
-  .wrapper2 .photo-frame-2::before {
-    top: 10px;
-    /* Separación desde el borde */
-    left: 10px;
-    border-right: none;
-    border-bottom: none;
-  }
-  
-  .wrapper2 .photo-frame-2::after {
-    top: 10px;
-    right: 10px;
-    border-left: none;
-    border-bottom: none;
-  }
-  
-  .wrapper2 .photo-frame-2 .corner {
-    position: absolute;
-    width: 50px;
-    /* Igual que arriba */
-    height: 80px;
-    /* Igual que arriba */
-    border: 3px solid var(--color-secundario);
-  }
-  
-  .wrapper2 .photo-frame-2 .corner.bottom-left {
-    bottom: 25px;
-    left: 10px;
-    /* Igual que arriba */
-    border-right: none;
-    border-top: none;
-  }
-  
-  .wrapper2 .photo-frame-2 .corner.bottom-right {
-    bottom: 25px;
-    right: 10px;
-    /* Igual que arriba */
-    border-left: none;
-    border-top: none;
-  }
-  
-  .wrapper2 .photo-frame-2 .slider-container {
-    background-color: var(--color-secundario);
-  }
-  
-  .wrapper2 .photo-frame-2 .slider-container .slider h3 {
-    color: var(--color-primario);
-    margin: 9px;
-  }
-  .wrapper2 .slider-inner img { width: 500px;
-    transition: 0.5s ease;
-
-  }
-  /*prueba*/ 
- /* El texto extra (párrafo) escondido */
-.wrapper2 .texto-hover {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  pointer-events: none;
-  z-index: 2;
-  color: var(--color-secundario);
-}
-
-/* Estilo del p */
-.wrapper2 .texto-hover p {
-  font-size: 25px;
-  margin: 0;
-}
-
-/* Efectos al hacer hover */
-.wrapper2 .slider:hover img {
-  filter: blur(5px) brightness(70%);
-  transform: scale(1.05);
-}
-
-.wrapper2 .slider:hover .texto-hover {
-  opacity: 1;
-}
-
-
-
-
-
-@media (max-width: 1023px) {
-  .Proyectos {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-
-  .wrapper1,
-  .wrapper2 {
-    width: 100%;
-    height: auto;
-  }
-
-  .photo-frame,
-  .photo-frame-2 {
-    width: 100%;
-  }
-
-  .slider-container,
-  .slider,
-  .slider-inner img {
-    width: 100%;
-    height: auto;
-  }
-}
