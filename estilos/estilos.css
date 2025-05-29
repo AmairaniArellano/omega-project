@@ -264,80 +264,115 @@ body {
   padding: 0;
 }
 
-.proyecto img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  display: block;
-
-
-
-}
-
 h2 {
   text-align: center;
   margin-top: 60px;
   font-size: 36px;
+  margin-bottom: 50px;
   color: var(--color-secundario);
   /* Color de títulos */
 }
-
-/* Contenedor de todos los proyectos */
-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 110px;
-  padding: 60px 10%;
-  background-color: var(--color-primario);
-  /* Fondo del contenedor */
+/* Contenedor principal que envuelve todos los elementos de la línea del tiempo */
+.contenedor {
+  display: grid; /* Usamos grid para que cada ítem esté uno debajo del otro */
+  grid-template-columns: 1fr; /* Solo una columna porque cada ítem contiene su propio grid interno */
+  gap: 3rem; /* Espacio entre los bloques de la línea del tiempo */
+  position: relative; /* Necesario para posicionar la línea central */
+  padding: 2rem; /* Espacio interno para que no quede pegado a los bordes */
 }
 
-
-/* Cada tarjeta de proyecto */
-.proyecto {
-  background-color: var(--color-primario);
-  color: var(--color-secundario);
-  /* Letras en color secundario */
-  padding: 30px 20px;
-  border-radius: 15px;
-  border: 3px solid var(--color-terciario);
-  /* Borde en color terciario */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s, box-shadow 0.3s;
-  text-align: left;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+/* Cada bloque de la línea del tiempo */
+.timeline-item {
+  display: grid; /* Usamos grid para dividir imagen y texto */
+  grid-template-columns: 1fr 1fr; /* Imagen a un lado, texto al otro */
+  align-items: center; /* Alinea verticalmente al centro */
+  gap: 2rem; /* Espacio entre imagen y texto */
 }
 
-/* Efecto al pasar el mouse */
-.proyecto:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+/* Estilo de la imagen */
+.timeline-img img {
+  width: 100%; /* Ocupa el 100% de su columna */
+  max-width: 300px; /* Limita el tamaño máximo de la imagen */
+  border-radius: 10px; /* Bordes redondeados para mejor estética */
 }
 
-/* Título de cada proyecto */
-.proyecto h3 {
-  font-size: 24px;
-  margin-bottom: 15px;
+/* Contenedor del texto del proyecto */
+.timeline-text {
+  padding: 1rem; /* Espacio interno */
+  border: 1px var(--color-terciario) solid; /* Borde blanco (puedes cambiarlo) */
+  background: var(--color-primario); /* Fondo claro (puedes cambiarlo) */
+  border-radius: 10px; /* Bordes redondeados */
+  margin: 20px 10px;
+  text-align: center;
 }
 
-/* Texto de cada proyecto */
-.proyecto p,
-.proyecto ul li {
-  font-size: 16px;
-  margin-bottom: 10px;
-  line-height: 1.6;
-  font-family: "Inter", sans-serif;
+.timeline-text h3{
+  margin: 15px 0 60px;
+  font-size: 35px;
 }
 
-/* Estilos especiales para la lista */
-.proyecto ul {
-  list-style: none;
-  padding: 0;
+.timeline-text p{
+  margin: 40px;
+  font-size: 25px;
 }
 
-.proyecto ul li {
-  margin-bottom: 10px;
+/* Inversión del orden: imagen a la derecha, texto a la izquierda */
+.timeline-item.reverse {
+  direction: rtl; /* Invierte visualmente el orden de las columnas */
+  text-align: center;
 }
+
+/* Vuelve a poner el texto en dirección normal */
+.timeline-item.reverse .timeline-text {
+  direction: ltr; /* Dirección de lectura normal para el texto */
+  text-align: center;
+}
+
+.timeline-text:hover {
+  background-color: var(--color-terciario);
+  color: var(--color-primario); /* Opcional: cambia el texto si quieres contraste */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Línea vertical central que simula la "línea del tiempo" */
+.contenedor::before {
+  content: '';
+  position: absolute;
+  left: 50%; /* Ubicada al centro horizontal */
+  top: 0;
+  bottom: 0;
+  width: 4px; /* Grosor de la línea */
+  background: var(--color-terciario); /* Color gris claro */
+  transform: translateX(-50%); /* Centra perfectamente la línea */
+}
+
+@media (max-width: 850px) {
+  .contenedor {
+    padding: 1rem;
+  }
+
+  .contenedor::before {
+    display: none; /* Oculta la línea del centro */
+  }
+
+  .timeline-item {
+    grid-template-columns: 1fr; /* Una sola columna */
+    text-align: center;
+  }
+
+  .timeline-item.reverse {
+    direction: ltr; /* Quita la inversión */
+  }
+
+  .timeline-item.reverse .timeline-text {
+    direction: ltr;
+  }
+
+  .timeline-img img {
+    max-width: 100%; /* Ocupa todo el ancho disponible */
+  }
+}
+
 
 /*pagina 4 ------------------------------------------------------------------------------------------------------*/
 .entrada {
