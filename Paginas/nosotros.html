@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav> 
+    <nav>
         <a href="../index.html"><img src="../media/Logos/ISOTIPO-BLANCO.png" alt="logo" class="logo1"></a>
 
         <button class="menu-toggle" aria-label="Abrir menú">
@@ -26,54 +26,65 @@
         </ul>
     </nav>
 
-    
-        <div class="Nosotros">
-            <div class="textos-n">
-                    <h2>Identidad</h2>
-                    <p>OMEGA se fundó con la ayuda de diversos socios en el año del 2019, siendo
-                    conformada por integrantes con más de 25 años de experiencia en el área de
-                    construcción y mantenimiento. En la actualidad, cuenta con distintos clientes
-                    tanto gubernamentales, corporativos y residenciales.</p>
-            </div>
-            <div class="N-imagenes">
-                <img src="../media/Nosotros/Todos.jpg" alt=" Todos">
-                <img src="../media/Nosotros/1.jpg" alt="1">
-                <img src="../media/Nosotros/2.jpg" alt="2">
-                <img src="../media/Nosotros/3.jpg" alt="3">
-            </div>
+
+    <div class="Nosotros">
+        <div class="textos-n">
+            <h2>Identidad</h2>
+            <p>OMEGA se fundó con la ayuda de diversos socios en el año del 2019, siendo
+                conformada por integrantes con más de 25 años de experiencia en el área de
+                construcción y mantenimiento. En la actualidad, cuenta con distintos clientes
+                tanto gubernamentales, corporativos y residenciales.</p>
         </div>
+        <div class="N-imagenes">
+            <img src="../media/Nosotros/Todos.jpg" alt=" Todos">
+            <img src="../media/Nosotros/1.jpg" alt="1">
+            <img src="../media/Nosotros/2.jpg" alt="2">
+            <img src="../media/Nosotros/3.jpg" alt="3">
+        </div>
+    </div>
     <div class="mision-y-vision">
 
         <div class="mision">
             <h2>Misión</h2>
-            <p>Omega es una empresa dedicada a ofrecer servicios integrales de mantenimiento 
-                corporativo y residencial. Se busca mantener la competitividad 
-                mediante la entrega de resultados óptimos y mayores rendimientos 
-                durante todo el proceso, cumpliendo con altos estándares de calidad 
+            <p>Omega es una empresa dedicada a ofrecer servicios integrales de mantenimiento
+                corporativo y residencial. Se busca mantener la competitividad
+                mediante la entrega de resultados óptimos y mayores rendimientos
+                durante todo el proceso, cumpliendo con altos estándares de calidad
                 para garantizar la satisfacción del cliente.</p>
         </div>
         <div class="vision">
             <h2>Visión</h2>
-            <p>Para el año 2030, se proyecta ser una empresa innovadora 
-                en el rubro de mantenimiento, reconocida a nivel regional 
-                por su liderazgo, responsabilidad y eficiencia. Se buscará 
-                el cumplimiento puntual con los clientes, el orgullo del 
-                personal por pertenecer a la organización, y la promoción 
-                del control y la calidad en el servicio, procurando siempre 
+            <p>Para el año 2030, se proyecta ser una empresa innovadora
+                en el rubro de mantenimiento, reconocida a nivel regional
+                por su liderazgo, responsabilidad y eficiencia. Se buscará
+                el cumplimiento puntual con los clientes, el orgullo del
+                personal por pertenecer a la organización, y la promoción
+                del control y la calidad en el servicio, procurando siempre
                 superar las expectativas.
             </p>
         </div>
     </div>
 
-        <div class="Oficinas">
-            <h2>Conoce las oficinas</h2>
-            <p>C. 3 77, Residencial Montecristo, 97139 Mérida, Yuc.</p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d931.1536542809706!2d-89.59686209599234!3d21.008079904948556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f56771a447c0047%3A0x22e69b4b6dc7b334!2sOMEGA!5e0!3m2!1ses!2smx!4v1745878122427!5m2!1ses!2smx"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+    <div class="Oficinas">
+        <h2>Conoce las oficinas</h2>
+        <p>C. 3 77, Residencial Montecristo, 97139 Mérida, Yuc.</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d931.1536542809706!2d-89.59686209599234!3d21.008079904948556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f56771a447c0047%3A0x22e69b4b6dc7b334!2sOMEGA!5e0!3m2!1ses!2smx!4v1745878122427!5m2!1ses!2smx"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('nav');
 
+            if (toggle && nav) {
+                toggle.addEventListener('click', () => {
+                    nav.classList.toggle('nav-open');
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>

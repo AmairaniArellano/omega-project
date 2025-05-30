@@ -28,6 +28,18 @@
     <h2>Nuestros Proyectos</h2>
     <div class="contenedor" id="contenedor"></div>
     <script src="../javascript/proyectos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const toggle = document.querySelector('.menu-toggle');
+          const nav = document.querySelector('nav');
+    
+          if (toggle && nav) {
+            toggle.addEventListener('click', () => {
+              nav.classList.toggle('nav-open');
+            });
+          }
+        });
+      </script>
 </body>
 
 </html>

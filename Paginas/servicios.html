@@ -2,79 +2,93 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../estilos/estilos.css">
-    <title>Document</title>
-    <link rel="icon" href="../media/Logos/isotipo-negro.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../estilos/estilos.css">
+  <title>Document</title>
+  <link rel="icon" href="../media/Logos/isotipo-negro.png" type="image/png">
 </head>
 
 <body>
-    <nav>
-        <a href="../index.html"><img src="../media/Logos/ISOTIPO-BLANCO.png" alt="logo" class="logo1"></a>
+  <nav>
+    <a href="../index.html"><img src="../media/Logos/ISOTIPO-BLANCO.png" alt="logo" class="logo1"></a>
 
-        <button class="menu-toggle" aria-label="Abrir menú">
-            ☰
-        </button>
+    <button class="menu-toggle" aria-label="Abrir menú">
+      ☰
+    </button>
 
-        <ul class="nav-links">
-            <li><a href="../Paginas/nosotros.html">Nosotros</a></li>
-            <li><a href="../Paginas/servicios.html">Servicios</a></li>
-            <li><a href="../Paginas/clientes.html">Clientes</a></li>
-            <li><a href="../Paginas/proyectos.html">Proyectos</a></li>
-            <li><a href="../index.html#Contacto">Contacto</a></li>
-        </ul>
-    </nav>
+    <ul class="nav-links">
+      <li><a href="../Paginas/nosotros.html">Nosotros</a></li>
+      <li><a href="../Paginas/servicios.html">Servicios</a></li>
+      <li><a href="../Paginas/clientes.html">Clientes</a></li>
+      <li><a href="../Paginas/proyectos.html">Proyectos</a></li>
+      <li><a href="../index.html#Contacto">Contacto</a></li>
+    </ul>
+  </nav>
 
 
   <div class="inicial">
-    <h2>Conoce Nuestros Servicios</h2> 
+    <h2>Conoce Nuestros Servicios</h2>
     <p>Nuestros tiempos de respuesta destacan por su eficiencia y compromiso en la atención de servicios.
-    Contamos con una sólida capacidad de resolución de problemas, respaldada por la supervisión constante y la coordinación de personal con alta valoración hacia OMEGA.
-    Nos enorgullece ofrecer un servicio de excelente calidad, con el respaldo de los mejores proveedores, especialmente en situaciones emergentes que requieren atención inmediata.</p>
-  </div>  
-  
+      Contamos con una sólida capacidad de resolución de problemas, respaldada por la supervisión constante y la
+      coordinación de personal con alta valoración hacia OMEGA.
+      Nos enorgullece ofrecer un servicio de excelente calidad, con el respaldo de los mejores proveedores,
+      especialmente en situaciones emergentes que requieren atención inmediata.</p>
+  </div>
+
   <div class="servicios-grid">
     <div class="servicio">
-     
+
       <div class="icono-servicio">
-      <img src="../media/iconos/servicios/ingeniero.png" alt="Obra Civil">
+        <img src="../media/iconos/servicios/ingeniero.png" alt="Obra Civil">
       </div>
       <h3>Obra Civil</h3>
       <p>Toda clase de construcciones,
-         obras civiles, edificaciones,
-         estructuras de concreto, remodelaciones, urbanización,
-         terracerías, acotamientos, puentes,
-         alcantarillado, drenaje, hidráulicas y
-         asfálticas, transporte de materiales
-         de construcción</p>
+        obras civiles, edificaciones,
+        estructuras de concreto, remodelaciones, urbanización,
+        terracerías, acotamientos, puentes,
+        alcantarillado, drenaje, hidráulicas y
+        asfálticas, transporte de materiales
+        de construcción</p>
     </div>
 
     <div class="servicio">
-      
-        <div class="icono-servicio">
-            <img src="../media/iconos/servicios/electricidad.png" alt="electrica">
-        </div>
-     <h3>Obra Eléctrica</h3>
+
+      <div class="icono-servicio">
+        <img src="../media/iconos/servicios/electricidad.png" alt="electrica">
+      </div>
+      <h3>Obra Eléctrica</h3>
       <p>Instalación eléctrica, plantas
-         de emergencia, aire acondicionado, subestación y
-         transformador, electricidad
-         baja y media tensión
+        de emergencia, aire acondicionado, subestación y
+        transformador, electricidad
+        baja y media tensión
       </p>
     </div>
 
     <div class="servicio">
-    <div class="icono-servicio">
+      <div class="icono-servicio">
         <img src="../media/iconos/servicios/mantenimiento.png" alt="mantenimiento">
-    </div>
+      </div>
       <h3>Mantenimiento y Reparaciones</h3>
-      
+
       <p>Prestación de servicios de mantenimiento y reparaciones industriales, torres de
-         enfriamiento y refrigeración y sus componentes, montajes electromecánicos, tanques atmosféricos, aplicación
-         de recubrimientos anticorrosivos, mantenimiento a motores eléctricos, equipos mecánicos, rotativos, calderas, etc.</p>
+        enfriamiento y refrigeración y sus componentes, montajes electromecánicos, tanques atmosféricos, aplicación
+        de recubrimientos anticorrosivos, mantenimiento a motores eléctricos, equipos mecánicos, rotativos, calderas,
+        etc.</p>
     </div>
   </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav');
 
+      if (toggle && nav) {
+        toggle.addEventListener('click', () => {
+          nav.classList.toggle('nav-open');
+        });
+      }
+    });
+  </script>
 
 </body>
 

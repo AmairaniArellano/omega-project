@@ -29,7 +29,7 @@ nav {
   display: none;
   flex-direction: column;
   list-style: none;
-  background-color: var(--color-primario);
+  background-color: black;  /* Fondo negro */
   position: absolute;
   top: 100%;
   left: 0;
@@ -39,6 +39,7 @@ nav {
   padding: 10px 0;
   margin: 0;
   font-family: "Inter", sans-serif;
+  z-index: 9999;  /* Para que quede encima */
 }
 
 .nav-links li {
@@ -49,7 +50,6 @@ a {
   text-decoration: none; /* Quita el subrayado */
   color: inherit;        /* Hereda el color del texto */
 }
-
 
 /* Menú visible cuando se abre */
 .nav-open .nav-links {
@@ -69,6 +69,7 @@ a {
     background: none;
     justify-content: flex-end;
     gap: 30px;
+    z-index: auto;
   }
 
   nav {
