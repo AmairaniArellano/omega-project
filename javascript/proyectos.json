@@ -29,15 +29,15 @@
     },
     {
         "id": 16,
-        "cliente": "CFE (Generación VI)",
-        "descripcion": "Aplicación de recubrimiento anticorrosivo Central Turbogas Chankanaab",
+        "cliente": "Asociación Cultural Educativa Austriaco Mexicana A.C.",
+        "descripcion": "Suministro e instalación de canchas de usos múltiples Querétaro",
         "fecha": "Octubre 2024 – Noviembre 2024",
         "imagen": "../media/Imagenes/lineaTiempo/16.jpg"
     },
     {
         "id": 15,
-        "cliente": "Asociación Cultural Educativa Austriaco Mexicana A.C.",
-        "descripcion": "Suministro e instalación de canchas de usos múltiples Querétaro",
+        "cliente": "CFE (Generación VI)",
+        "descripcion": "Aplicación de recubrimiento anticorrosivo Central Turbogas Chankanaab",
         "fecha": "Octubre 2024 – Noviembre 2024",
         "imagen": "../media/Imagenes/lineaTiempo/15.jpg"
     },
@@ -81,7 +81,7 @@
         "cliente": "Compañía de Generación Valladolid (Ciclo Combinado Valladolid III)",
         "descripcion": "Fabricación y adecuación de escalera marina a parte superior de tanque de agua",
         "fecha": "Septiembre 2023 – Septiembre 2023",
-        "imagen": "../media/Imagenes/lineaTiempo/9.jpg"
+        "imagen": "../media/Imagenes/lineaTiempo/9.jpeg"
     },
     {
         "id": 8,
@@ -100,14 +100,14 @@
     {
         "id": 6,
         "cliente": "Compañía de Generación Valladolid (Ciclo Combinado Valladolid III)",
-        "descripcion": "Construcción de plancha de concreto",
+        "descripcion": "Servicios de reparación emergente en motor diésel",
         "fecha": "Agosto 2022 – Septiembre 2022",
         "imagen": "../media/Imagenes/lineaTiempo/6.jpg"
     },
     {
         "id": 5,
         "cliente": "Compañía de Generación Valladolid (Ciclo Combinado Valladolid III)",
-        "descripcion": "Servicios de reparación emergente en motor diésel",
+        "descripcion": "Construcción de plancha de concreto",
         "fecha": "Agosto 2022 – Septiembre 2022",
         "imagen": "../media/Imagenes/lineaTiempo/5.jpg"
     },
@@ -123,7 +123,7 @@
         "cliente": "CFE (Generación VI)",
         "descripcion": "Suavizado de alabes turbina y compresor, reparación de grietas en carcasas y candadeo",
         "fecha": "Agosto 2020",
-        "imagen": "../media/Imagenes/lineaTiempo/3.jpg"
+        "imagen": "../media/Imagenes/lineaTiempo/3.jpeg"
     },
     {
         "id": 2,
