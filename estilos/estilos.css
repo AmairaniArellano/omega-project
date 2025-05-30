@@ -291,15 +291,16 @@ h2 {
 
 /* Estilo de la imagen */
 .timeline-img img {
-  width: 100%; /* Ocupa el 100% de su columna */
-  max-width: 300px; /* Limita el tamaño máximo de la imagen */
+  width: 80%; /* Ocupa el 100% de su columna */
+  max-width: 100%; /* Limita el tamaño máximo de la imagen */
   border-radius: 10px; /* Bordes redondeados para mejor estética */
+  margin: 50px;
 }
 
 /* Contenedor del texto del proyecto */
 .timeline-text {
   padding: 1rem; /* Espacio interno */
-  border: 1px var(--color-terciario) solid; /* Borde blanco (puedes cambiarlo) */
+ /*aqui iba el borde*/
   background: var(--color-primario); /* Fondo claro (puedes cambiarlo) */
   border-radius: 10px; /* Bordes redondeados */
   margin: 20px 10px;
