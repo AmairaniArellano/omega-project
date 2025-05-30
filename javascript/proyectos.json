@@ -1,129 +1,10 @@
 [
     {
-        "id": 1,
-        "cliente": "CFE (Generación VI)",
-        "descripcion": "Reparación de tubería de poliestireno de alta densidad",
-        "fecha": "Junio 2019",
-        "imagen": "../media/Imagenes/lineaTiempo/1.jpg"
-    },
-    {
-        "id": 2,
-        "cliente": "CFE (Generación VI)",
-        "descripcion": "Mantenimiento de áreas verdes",
-        "fecha": "Mayo 2019 – Noviembre 2019",
-        "imagen": "../media/Imagenes/lineaTiempo/2.jpg"
-    },
-    {
-        "id": 3,
-        "cliente": "CFE (Generación VI)",
-        "descripcion": "Suavizado de alabes turbina y compresor, reparación de grietas en carcasas y candadeo",
-        "fecha": "Agosto 2020",
-        "imagen": "../media/Imagenes/lineaTiempo/3.jpg"
-    },
-    {
-        "id": 4,
-        "cliente": "Cementos Fortaleza",
-        "descripcion": "Instalación de cerco perimetral, fabricación de contenedores de residuos sólidos y aplicación de recubrimientos",
-        "fecha": "Agosto 2020 – Septiembre 2020",
-        "imagen": "../media/Imagenes/lineaTiempo/4.jpg"
-    },
-    {
-        "id": 5,
-        "cliente": "Compañía de Generación Valladolid (Ciclo Combinado Valladolid III)",
-        "descripcion": "Servicios de reparación emergente en motor diésel",
-        "fecha": "Agosto 2022 – Septiembre 2022",
-        "imagen": "../media/Imagenes/lineaTiempo/5.jpg"
-    },
-    {
-        "id": 6,
-        "cliente": "Compañía de Generación Valladolid (Ciclo Combinado Valladolid III)",
-        "descripcion": "Construcción de plancha de concreto",
-        "fecha": "Agosto 2022 – Septiembre 2022",
-        "imagen": "../media/Imagenes/lineaTiempo/6.jpg"
-    },
-    {
-        "id": 7,
-        "cliente": "Cementos Fortaleza",
-        "descripcion": "Descarga de Clinker, limpieza de instalaciones y traslado de muestras de concreto",
-        "fecha": "Junio 2023 – Septiembre 2023",
-        "imagen": "../media/Imagenes/lineaTiempo/7.jpg"
-    },
-    {
-        "id": 8,
-        "cliente": "Compañía de Generación Valladolid (Ciclo Combinado Valladolid III)",
-        "descripcion": "Servicio de mantenimiento a camper de GE",
-        "fecha": "Agosto 2023 – Agosto 2023",
-        "imagen": "../media/Imagenes/lineaTiempo/8.jpg"
-    },
-    {
-        "id": 9,
-        "cliente": "Compañía de Generación Valladolid (Ciclo Combinado Valladolid III)",
-        "descripcion": "Fabricación y adecuación de escalera marina a parte superior de tanque de agua",
-        "fecha": "Septiembre 2023 – Septiembre 2023",
-        "imagen": "../media/Imagenes/lineaTiempo/9.jpg"
-    },
-    {
-        "id": 10,
-        "cliente": "CFE (Generación VI)",
-        "descripcion": "Colocación de aislamiento térmico desmontable",
-        "fecha": "Octubre 2023 – Octubre 2023",
-        "imagen": "../media/Imagenes/lineaTiempo/10.jpg"
-    },
-    {
-        "id": 11,
-        "cliente": "CFE (Generación VI)",
-        "descripcion": "Mantenimiento integral al generador de vapor y equipos auxiliares",
-        "fecha": "Diciembre 2023",
-        "imagen": "../media/Imagenes/lineaTiempo/11.jpg"
-    },
-    {
-        "id": 12,
-        "cliente": "Compañía de Generación Valladolid (Ciclo Combinado Valladolid III)",
-        "descripcion": "Aplicación de recubrimientos anticorrosivos a franjas",
-        "fecha": "Enero 2024",
-        "imagen": "../media/Imagenes/lineaTiempo/12.jpg"
-    },
-    {
-        "id": 13,
-        "cliente": "CFE (Generación VI)",
-        "descripcion": "Servicio especializado de pintura multi anual",
-        "fecha": "Enero 2024 – Diciembre 2024",
-        "imagen": "../media/Imagenes/lineaTiempo/13.jpg"
-    },
-    {
-        "id": 14,
-        "cliente": "Comisión Federal de Electricidad (Generación VI)",
-        "descripcion": "Mantenimiento de obras civiles de la Central Felipe Carrillo Puerto",
-        "fecha": "Enero 2024 – Diciembre 2024",
-        "imagen": "../media/Imagenes/lineaTiempo/14.jpg"
-    },
-    {
-        "id": 15,
-        "cliente": "Asociación Cultural Educativa Austriaco Mexicana A.C.",
-        "descripcion": "Suministro e instalación de canchas de usos múltiples Querétaro",
-        "fecha": "Octubre 2024 – Noviembre 2024",
-        "imagen": "../media/Imagenes/lineaTiempo/15.jpg"
-    },
-    {
-        "id": 16,
-        "cliente": "CFE (Generación VI)",
-        "descripcion": "Aplicación de recubrimiento anticorrosivo Central Turbogas Chankanaab",
-        "fecha": "Octubre 2024 – Noviembre 2024",
-        "imagen": "../media/Imagenes/lineaTiempo/16.jpg"
-    },
-    {
-        "id": 17,
-        "cliente": "Comisión Federal de Electricidad (Generación VI)",
-        "descripcion": "Mantenimiento a tubería de gas de la Central Termoeléctrica Mérida II",
-        "fecha": "Junio 2024 – Julio 2024",
-        "imagen": "../media/Imagenes/lineaTiempo/17.jpg"
-    },
-    {
-        "id": 18,
-        "cliente": "Comisión Federal de Electricidad (Generación VI)",
-        "descripcion": "Mantenimiento y conservación de instalaciones de la Central Turbogas Carmen",
-        "fecha": "Junio 2024 – Noviembre 2024",
-        "imagen": "../media/Imagenes/lineaTiempo/18.jpg"
+        "id": 20,
+        "cliente": "Particular",
+        "descripcion": "Construcción casa-habitación Fraccionamiento Los Héroes",
+        "fecha": "Agosto 2024 – Junio 2025",
+        "imagen": "../media/Imagenes/lineaTiempo/20.jpg"
     },
     {
         "id": 19,
@@ -133,10 +14,129 @@
         "imagen": "../media/Imagenes/lineaTiempo/19.jpg"
     },
     {
-        "id": 20,
-        "cliente": "Particular",
-        "descripcion": "Construcción casa-habitación Fraccionamiento Los Héroes",
-        "fecha": "Agosto 2024 – Junio 2025",
-        "imagen": "../media/Imagenes/lineaTiempo/20.jpg"
+        "id": 18,
+        "cliente": "Comisión Federal de Electricidad (Generación VI)",
+        "descripcion": "Mantenimiento y conservación de instalaciones de la Central Turbogas Carmen",
+        "fecha": "Junio 2024 – Noviembre 2024",
+        "imagen": "../media/Imagenes/lineaTiempo/18.jpg"
+    },
+    {
+        "id": 17,
+        "cliente": "Comisión Federal de Electricidad (Generación VI)",
+        "descripcion": "Mantenimiento a tubería de gas de la Central Termoeléctrica Mérida II",
+        "fecha": "Junio 2024 – Julio 2024",
+        "imagen": "../media/Imagenes/lineaTiempo/17.jpg"
+    },
+    {
+        "id": 16,
+        "cliente": "CFE (Generación VI)",
+        "descripcion": "Aplicación de recubrimiento anticorrosivo Central Turbogas Chankanaab",
+        "fecha": "Octubre 2024 – Noviembre 2024",
+        "imagen": "../media/Imagenes/lineaTiempo/16.jpg"
+    },
+    {
+        "id": 15,
+        "cliente": "Asociación Cultural Educativa Austriaco Mexicana A.C.",
+        "descripcion": "Suministro e instalación de canchas de usos múltiples Querétaro",
+        "fecha": "Octubre 2024 – Noviembre 2024",
+        "imagen": "../media/Imagenes/lineaTiempo/15.jpg"
+    },
+    {
+        "id": 14,
+        "cliente": "Comisión Federal de Electricidad (Generación VI)",
+        "descripcion": "Mantenimiento de obras civiles de la Central Felipe Carrillo Puerto",
+        "fecha": "Enero 2024 – Diciembre 2024",
+        "imagen": "../media/Imagenes/lineaTiempo/14.jpg"
+    },
+    {
+        "id": 13,
+        "cliente": "CFE (Generación VI)",
+        "descripcion": "Servicio especializado de pintura multi anual",
+        "fecha": "Enero 2024 – Diciembre 2024",
+        "imagen": "../media/Imagenes/lineaTiempo/13.jpg"
+    },
+    {
+        "id": 12,
+        "cliente": "Compañía de Generación Valladolid (Ciclo Combinado Valladolid III)",
+        "descripcion": "Aplicación de recubrimientos anticorrosivos a franjas",
+        "fecha": "Enero 2024",
+        "imagen": "../media/Imagenes/lineaTiempo/12.jpg"
+    },
+    {
+        "id": 11,
+        "cliente": "CFE (Generación VI)",
+        "descripcion": "Mantenimiento integral al generador de vapor y equipos auxiliares",
+        "fecha": "Diciembre 2023",
+        "imagen": "../media/Imagenes/lineaTiempo/11.jpg"
+    },
+    {
+        "id": 10,
+        "cliente": "CFE (Generación VI)",
+        "descripcion": "Colocación de aislamiento térmico desmontable",
+        "fecha": "Octubre 2023 – Octubre 2023",
+        "imagen": "../media/Imagenes/lineaTiempo/10.jpg"
+    },
+    {
+        "id": 9,
+        "cliente": "Compañía de Generación Valladolid (Ciclo Combinado Valladolid III)",
+        "descripcion": "Fabricación y adecuación de escalera marina a parte superior de tanque de agua",
+        "fecha": "Septiembre 2023 – Septiembre 2023",
+        "imagen": "../media/Imagenes/lineaTiempo/9.jpg"
+    },
+    {
+        "id": 8,
+        "cliente": "Compañía de Generación Valladolid (Ciclo Combinado Valladolid III)",
+        "descripcion": "Servicio de mantenimiento a camper de GE",
+        "fecha": "Agosto 2023 – Agosto 2023",
+        "imagen": "../media/Imagenes/lineaTiempo/8.jpg"
+    },
+    {
+        "id": 7,
+        "cliente": "Cementos Fortaleza",
+        "descripcion": "Descarga de Clinker, limpieza de instalaciones y traslado de muestras de concreto",
+        "fecha": "Junio 2023 – Septiembre 2023",
+        "imagen": "../media/Imagenes/lineaTiempo/7.jpg"
+    },
+    {
+        "id": 6,
+        "cliente": "Compañía de Generación Valladolid (Ciclo Combinado Valladolid III)",
+        "descripcion": "Construcción de plancha de concreto",
+        "fecha": "Agosto 2022 – Septiembre 2022",
+        "imagen": "../media/Imagenes/lineaTiempo/6.jpg"
+    },
+    {
+        "id": 5,
+        "cliente": "Compañía de Generación Valladolid (Ciclo Combinado Valladolid III)",
+        "descripcion": "Servicios de reparación emergente en motor diésel",
+        "fecha": "Agosto 2022 – Septiembre 2022",
+        "imagen": "../media/Imagenes/lineaTiempo/5.jpg"
+    },
+    {
+        "id": 4,
+        "cliente": "Cementos Fortaleza",
+        "descripcion": "Instalación de cerco perimetral, fabricación de contenedores de residuos sólidos y aplicación de recubrimientos",
+        "fecha": "Agosto 2020 – Septiembre 2020",
+        "imagen": "../media/Imagenes/lineaTiempo/4.jpg"
+    },
+    {
+        "id": 3,
+        "cliente": "CFE (Generación VI)",
+        "descripcion": "Suavizado de alabes turbina y compresor, reparación de grietas en carcasas y candadeo",
+        "fecha": "Agosto 2020",
+        "imagen": "../media/Imagenes/lineaTiempo/3.jpg"
+    },
+    {
+        "id": 2,
+        "cliente": "CFE (Generación VI)",
+        "descripcion": "Mantenimiento de áreas verdes",
+        "fecha": "Mayo 2019 – Noviembre 2019",
+        "imagen": "../media/Imagenes/lineaTiempo/2.jpg"
+    },
+    {
+        "id": 1,
+        "cliente": "CFE (Generación VI)",
+        "descripcion": "Reparación de tubería de poliestireno de alta densidad",
+        "fecha": "Junio 2019",
+        "imagen": "../media/Imagenes/lineaTiempo/1.jpg"
     }
 ]
