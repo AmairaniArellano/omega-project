@@ -83,7 +83,7 @@
 
 .mision h2,
 .vision h2 {
-  font-size: 28px;
+  font-size: 30px;
   margin-bottom: 20px;
   text-align: center;
   color: var(--color-secundario);
@@ -102,53 +102,73 @@
   background-color: var(--color-primario);
   font-family: "Inter", sans-serif;
   color: var(--color-secundario);
-  padding: 5% 10%;
-  text-align: center;
+  padding: 1% 5%;
+  display: flex;
+  flex-direction: column;
 }
 
 .Oficinas h2 {
-  font-size: 32px;
+  font-size: 30px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .Oficinas p {
   font-size: 18px;
   margin-bottom: 30px;
+  text-align: justify;
 }
 
-.Oficinas iframe {
+.mapa{
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  padding: 2%;
+}
+
+.oficinaC{
+  background-color: var(--color-primario);
+  font-family: "Inter", sans-serif;
+  color: var(--color-secundario);
+  font-size: 30px;
+  text-align: center;
+
+}
+.oficinaC iframe {
   width: 100%;
   max-width: 800px;
   height: 400px;
   border: 0;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 10px;
 }
 
-/* --- Responsive para pantallas medianas (tabletas) --- */
-@media (max-width: 992px) {
+/* --------------------------------------- */
+/* RESPONSIVE para la sección Nosotros     */
+/* --------------------------------------- */
+@media (max-width: 768px) {
   .Nosotros {
     flex-direction: column;
+    padding: 10% 5%;
     text-align: center;
-    padding: 8% 5%;
+  }
+
+  .N-imagenes {
+    grid-template-columns: 1fr; /* De 2 columnas → 1 columna */
+    gap: 15px;
+  }
+
+  .N-imagenes img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
   }
 
   .mision-y-vision {
     grid-template-columns: 1fr;
-    padding: 8% 5%;
-    text-align: center;
-  }
-
-  .mision,
-  .vision {
-    margin-bottom: 30px;
-  }
-}
-
-/* --- Responsive para pantallas pequeñas (celulares) --- */
-@media (max-width: 600px) {
-  .Nosotros p {
-    font-size: 18px;
+    padding: 10% 5%;
+    gap: 40px;
   }
 
   .mision h2,
@@ -161,17 +181,25 @@
     font-size: 16px;
   }
 
-  .Oficinas iframe {
-    height: 300px;
+  .mapa {
+    flex-direction: column;
+    gap: 30px;
+    padding: 5%;
   }
-}
 
-@media (max-width: 600px) {
-  .Nosotros img {
+  .mapa img {
     width: 100%;
     max-width: 300px;
-    margin: 20px auto 0;
-    display: block;
+    margin: 0 auto;
+  }
+
+  .Oficinas p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .oficinaC iframe {
+    height: 300px;
   }
 }
 
@@ -388,6 +416,14 @@ h2 {
   font-size: 18px;
 }
 
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 70px;
+  padding: 20px 50px;
+  background-color: var(--color-primario);
+  font-family: "Inter", sans-serif;
+}
 .card h3 {
   padding-block-end: 3%;
   font-size: 27px;
@@ -411,3 +447,29 @@ h2 {
   color: var(--color-terciario);
   gap: 10px;
 }
+.card:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);}
+
+  /* resposive*/ 
+  @media (max-width: 768px) {
+  .entrada {
+    padding-left: 8%;
+    padding-right: 8%;
+    font-size: 16px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .card h3 {
+    font-size: 22px;
+  }
+
+  .card ul {
+    font-size: 16px;
+    padding: 10%;
+    gap: 8px;
+  }
+}
+

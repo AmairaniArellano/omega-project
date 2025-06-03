@@ -115,7 +115,8 @@ nav ul {
 .Colaboradores-container {
   display: flex;
   align-items: center;
-  gap: 60px;
+  width: max-content;
+  gap: 40px;
   animation: moverlogos 25s linear infinite;
 }
 
@@ -149,7 +150,7 @@ nav ul {
   }
 
   .Colaboradores-container {
-    animation: moverlogos 40s linear infinite; /* Un poco más lenta en celular */
+    animation: moverlogos 30s linear infinite; /* Un poco más lenta en celular */
   }
 }
 
