@@ -331,17 +331,18 @@ h2 {
  /*aqui iba el borde*/
   background: var(--color-primario); /* Fondo claro (puedes cambiarlo) */
   border-radius: 10px; /* Bordes redondeados */
-  margin: 20px 10px;
-  text-align: center;
+  margin: 20px;
+  text-align: left;
+  max-width: 500px;
 }
 
 .timeline-text h3{
-  margin: 15px 0 60px;
+  margin-top: 30px;
   font-size: 35px;
 }
 
 .timeline-text p{
-  margin: 40px;
+  margin-top: 80px;
   font-size: 25px;
 }
 
@@ -354,7 +355,7 @@ h2 {
 /* Vuelve a poner el texto en dirección normal */
 .timeline-item.reverse .timeline-text {
   direction: ltr; /* Dirección de lectura normal para el texto */
-  text-align: center;
+  text-align: right;
 }
 
 .timeline-text:hover {
